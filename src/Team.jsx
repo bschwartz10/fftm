@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Player from './Player.jsx'
-import axios from 'axios'
 
 export default class Team extends Component {
   constructor(props) {
@@ -8,17 +7,10 @@ export default class Team extends Component {
     this.state = {
     }
   }
-  
-  componentDidMount() {
-    axios.get('http://localhost:3000/api/v1/teams/teams/1')
-    .then(response => {
-      this.setState({data: response.data})
-    })
-  }
 
   players() {
-    if (this.state.data === undefined) return
-    return this.state.data.players.map((player, i) => {
+    if (this.props.data === undefined) return
+    return this.props.data.players.map((player, i) => {
       return <Player info={player} key={i}/>
     })
   }
