@@ -13,7 +13,10 @@ export default class Player extends Component {
        <td>{position}</td>
        <td>{nflTeam}</td>
        <td>{fantasyPoints}</td>
-      </tr>
+       <td>
+       <button onClick={()=> console.log('fired')}>Trade</button>
+       </td>
+    </tr>
     )
   }
 }
