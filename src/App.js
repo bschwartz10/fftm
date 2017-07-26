@@ -8,9 +8,11 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      playersToCompare : []
+      teamOnePlayers : [],
+      teamTwoPlayers : []
     }
     this.handleClick = this.handleClick.bind(this)
+    // this.handleClickTeamTwo = this.handleClickTeamTwo.bind(this)
   }
 
   componentDidMount() {
@@ -25,16 +27,20 @@ class App extends Component {
   }
 
   handleClick(player) {
-    this.setState({playersToCompare: this.state.playersToCompare.concat(player)})
+    if (player.teamId === 1) {
+      this.setState({teamOnePlayers: this.state.teamOnePlayers.concat(player)})
+    }else {
+    this.setState({teamTwoPlayers: this.state.teamTwoPlayers.concat(player)})
+    }
   }
-
 
   render() {
     return (
       <div className="App">
         <Team data={this.state.data1} onClick={this.handleClick}/>
         <Team data={this.state.data2} onClick={this.handleClick}/>
-        <PlayersToCompare players={this.state.playersToCompare} />
+        <PlayersToCompare players={this.state.teamOnePlayers} />
+        <PlayersToCompare players={this.state.teamTwoPlayers} />
       </div>
     );
   }
