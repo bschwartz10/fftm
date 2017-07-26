@@ -1,29 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Team from './Team.jsx'
-import TradedPlayer from './TradedPlayer.jsx'
+import PlayersToCompare from './PlayersToCompare.jsx'
 import axios from 'axios'
-
-class PlayersToCompare extends Component {
-
-  tradePlayers() {
-    if (this.props.players === []) return
-    return this.props.players.map((player, i) => {
-
-      return <TradedPlayer info={player} key={i}/>
-    })
-  }
-
-  render() {
-    return (
-          <table>
-            <tbody>
-          {this.tradePlayers()}
-            </tbody>
-          </table>
-    )
-  }
-}
 
 class App extends Component {
   constructor(props) {
