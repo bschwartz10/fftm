@@ -26,11 +26,24 @@ class App extends Component {
     })
   }
 
+  // Array.prototype.indexOfName = function(name) {
+  //   for (var i = 0; i < this.length; i++)
+  //       if (this[i].name === name)
+  //           return i;
+  //   return -1;
+  // }
+
   handleClick(player) {
     if (player.teamId === 1) {
+    const filter1 = (this.state.teamOnePlayers.findIndex(i => i.name === player.name))
+      if (filter1 === -1) {
       this.setState({teamOnePlayers: this.state.teamOnePlayers.concat(player)})
-    }else {
-    this.setState({teamTwoPlayers: this.state.teamTwoPlayers.concat(player)})
+      }
+    } else {
+        const filter2 = (this.state.teamTwoPlayers.findIndex(i => i.name === player.name))
+        if (filter2 === -1) {
+          this.setState({teamTwoPlayers: this.state.teamTwoPlayers.concat(player)})
+        }
     }
   }
 
