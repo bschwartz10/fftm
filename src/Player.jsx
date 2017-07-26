@@ -6,6 +6,7 @@ export default class Player extends Component {
     const position = this.props.info.position
     const nflTeam = this.props.info.nfl_team
     const fantasyPoints = this.props.info.stats[0].fantasy_points
+    const teamId = this.props.info.team_id
 
     return (
       <tr>
@@ -15,7 +16,7 @@ export default class Player extends Component {
        <td>{fantasyPoints}</td>
        <td>
        <button
-         onClick={() => this.props.onClick({name: name, position: position, nflTeam: nflTeam, fantasyPoints: fantasyPoints})}>
+         onClick={() => this.props.onClick({name: name, position: position, nflTeam: nflTeam, fantasyPoints: fantasyPoints, teamId: teamId})}>
          Trade
        </button>
        </td>
