@@ -16,6 +16,7 @@ export default class Player extends Component {
        <td>{fantasyPoints}</td>
        <td>
        <button
+         className="button"
          onClick={() => this.props.onClick({name: name, position: position, nflTeam: nflTeam, fantasyPoints: fantasyPoints, teamId: teamId})}>
          Trade
        </button>
