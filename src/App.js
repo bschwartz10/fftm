@@ -12,7 +12,6 @@ class App extends Component {
       teamTwoPlayers : []
     }
     this.handleClick = this.handleClick.bind(this)
-    // this.handleClickTeamTwo = this.handleClickTeamTwo.bind(this)
   }
 
   componentDidMount() {
@@ -25,13 +24,6 @@ class App extends Component {
       this.setState({data2: response.data})
     })
   }
-
-  // Array.prototype.indexOfName = function(name) {
-  //   for (var i = 0; i < this.length; i++)
-  //       if (this[i].name === name)
-  //           return i;
-  //   return -1;
-  // }
 
   handleClick(player) {
     if (player.teamId === 1) {
@@ -50,10 +42,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Team data={this.state.data1} onClick={this.handleClick}/>
-        <Team data={this.state.data2} onClick={this.handleClick}/>
-        <PlayersToCompare players={this.state.teamOnePlayers} />
-        <PlayersToCompare players={this.state.teamTwoPlayers} />
+        <div className="teamOne">
+          <Team data={this.state.data1} onClick={this.handleClick}/>
+        </div>
+        <div className="teamTwo">
+          <Team data={this.state.data2} onClick={this.handleClick}/>
+        </div>
+        <div className="proposedPlayersTeamOne">
+          <h2>Proposed Players</h2>
+          <PlayersToCompare players={this.state.teamOnePlayers} />
+        </div>
+        <div className="proposedPlayersTeamTwo">
+          <h2>Proposed Players</h2>
+          <PlayersToCompare players={this.state.teamTwoPlayers} />
+        </div>
       </div>
     );
   }
