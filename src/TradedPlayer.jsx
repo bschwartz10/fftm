@@ -4,7 +4,7 @@ export default class TradedPlayer extends Component {
   render() {
     let name = this.props.info.name
     let position = this.props.info.position
-    let nflTeam = this.props.info.nfl_team
+    let nflTeam = this.props.info.nflTeam
     let fantasyPoints = this.props.info.fantasyPoints
     return (
       <tr>
