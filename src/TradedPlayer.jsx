@@ -7,11 +7,11 @@ export default class TradedPlayer extends Component {
     let nflTeam = this.props.info.nflTeam
     let fantasyPoints = this.props.info.fantasyPoints
     return (
-      <tr>
+      <tr className="tradedPlayer">
        <td>{name}</td>
        <td>{position}</td>
        <td>{nflTeam}</td>
-       <td>{fantasyPoints}</td>
+       <td>{fantasyPoints} points</td>
       </tr>
     )
   }
