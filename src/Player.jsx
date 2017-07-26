@@ -14,7 +14,10 @@ export default class Player extends Component {
        <td>{nflTeam}</td>
        <td>{fantasyPoints}</td>
        <td>
-       <button onClick={()=> console.log('fired')}>Trade</button>
+       <button
+         onClick={() => this.props.onClick({name: name, position: position, nflTeam: nflTeam, fantasyPoints: fantasyPoints})}>
+         Trade
+       </button>
        </td>
     </tr>
     )

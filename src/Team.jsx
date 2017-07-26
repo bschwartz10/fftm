@@ -11,7 +11,7 @@ export default class Team extends Component {
   players() {
     if (this.props.data === undefined) return
     return this.props.data.players.map((player, i) => {
-      return <Player info={player} key={i}/>
+      return <Player onClick={this.props.onClick} info={player} key={i}/>
     })
   }
 
