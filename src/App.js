@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Team from './Team.jsx'
 import PlayersToCompare from './PlayersToCompare.jsx'
+import {EvaluateButton} from './EvaluateButton.jsx'
 import axios from 'axios'
 
 class App extends Component {
@@ -56,6 +57,7 @@ class App extends Component {
           <h2>Proposed Players</h2>
           <PlayersToCompare players={this.state.teamTwoPlayers} />
         </div>
+        <EvaluateButton teamOne={this.state.teamOnePlayers} teamTwo={this.state.teamTwoPlayers} />
       </div>
     );
   }
