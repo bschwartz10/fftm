@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 export const EvaluateButton = (props) => {
   if (props.teamOne.length >= 1 && props.teamTwo.length >= 1) {
     return (
-      <button>Two Players Added</button>
+      <button className="button">Evaluate Trade</button>
     )
   } else {
-  return <button>No Players Added</button>
+  return <button className="button disabled">Evaluate Trade</button>
   }
 }

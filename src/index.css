@@ -41,9 +41,21 @@ body {
 }
 
 .button:hover {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4CAF50;
+  color: white;
 }
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  color: red;
+  border: 2px solid red;
+}
+
+.disabled:hover {
+  background-color: red;
+}
+
 
 th {
   background-color: black;
