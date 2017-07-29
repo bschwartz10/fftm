@@ -84,3 +84,12 @@ table {
 .tradedPlayer {
   font-family: cursive;
 }
+
+.remove-player {
+  color: red;
+  border: 2px solid red;
+}
+
+.remove-player:hover {
+  background-color: red;
+}
