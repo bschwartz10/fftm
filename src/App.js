@@ -14,6 +14,7 @@ class App extends Component {
     }
     this.handleClickAdd = this.handleClickAdd.bind(this)
     this.handleClickRemove = this.handleClickRemove.bind(this)
+    this.handleClickReset = this.handleClickReset.bind(this)
   }
 
   componentDidMount() {
@@ -54,6 +55,11 @@ class App extends Component {
     }
   }
 
+  handleClickReset() {
+    this.setState({teamOnePlayers: []})
+    this.setState({teamTwoPlayers: []})
+  }
+
   render() {
     return (
       <div className="App">
@@ -71,7 +77,7 @@ class App extends Component {
           <h2>Proposed Players</h2>
           <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamTwoPlayers} />
         </div>
-        <EvaluateButton teamOne={this.state.teamOnePlayers} teamTwo={this.state.teamTwoPlayers} />
+        <EvaluateButton onClick={this.handleClickReset} teamOne={this.state.teamOnePlayers} teamTwo={this.state.teamTwoPlayers} />
       </div>
     );
   }
