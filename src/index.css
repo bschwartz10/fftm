@@ -93,3 +93,11 @@ table {
 .remove-player:hover {
   background-color: red;
 }
+.reset-trade {
+  color: orange;
+  border: 2px solid orange;
+}
+
+.reset-trade:hover {
+  background-color: orange;
+}
