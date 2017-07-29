@@ -12,7 +12,8 @@ class App extends Component {
       teamOnePlayers : [],
       teamTwoPlayers : []
     }
-    this.handleClick = this.handleClick.bind(this)
+    this.handleClickAdd = this.handleClickAdd.bind(this)
+    this.handleClickRemove = this.handleClickRemove.bind(this)
   }
 
   componentDidMount() {
@@ -26,7 +27,7 @@ class App extends Component {
     })
   }
 
-  handleClick(player) {
+  handleClickAdd(player) {
     if (player.teamId === 1) {
     const filter1 = (this.state.teamOnePlayers.findIndex(i => i.name === player.name))
       if (filter1 === -1) {
@@ -40,22 +41,35 @@ class App extends Component {
     }
   }
 
+  handleClickRemove(player) {
+    if (player.teamId === 1) {
+      let playerIndex = (this.state.teamOnePlayers.findIndex(i => i.name === player.name))
+        this.state.teamOnePlayers.splice(playerIndex, 1)
+        this.setState({teamOnePlayers: this.state.teamOnePlayers})
+    }
+    else if (player.teamId === 2) {
+      let playerIndex = (this.state.teamTwoPlayers.findIndex(i => i.name === player.name))
+        this.state.teamTwoPlayers.splice(playerIndex, 1)
+        this.setState({teamTwoPlayers: this.state.teamTwoPlayers})
+    }
+  }
+
   render() {
     return (
       <div className="App">
         <div className="teamOne">
-          <Team data={this.state.data1} onClick={this.handleClick}/>
+          <Team data={this.state.data1} onClick={this.handleClickAdd}/>
         </div>
         <div className="teamTwo">
-          <Team data={this.state.data2} onClick={this.handleClick}/>
+          <Team data={this.state.data2} onClick={this.handleClickAdd}/>
         </div>
         <div className="proposedPlayersTeamOne">
           <h2>Proposed Players</h2>
-          <PlayersToCompare players={this.state.teamOnePlayers} />
+          <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamOnePlayers} />
         </div>
         <div className="proposedPlayersTeamTwo">
           <h2>Proposed Players</h2>
-          <PlayersToCompare players={this.state.teamTwoPlayers} />
+          <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamTwoPlayers} />
         </div>
         <EvaluateButton teamOne={this.state.teamOnePlayers} teamTwo={this.state.teamTwoPlayers} />
       </div>
