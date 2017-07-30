@@ -13,9 +13,9 @@ export const TradeResult = (props) => {
 
   const message = () => {
     if (points > 0) {
-      return `I'd recommened making this trade, it would result in an increase of ${points} points for your team`
+      return `This trade would result in an increase of ${points} points for your team`
     }else {
-      return `I'd think twice about making this trade, it would result in a decrease of ${Math.abs(points)} points for your team`
+      return `This trade would result in a decrease of ${Math.abs(points)} points for your team`
     }
   }
 
@@ -24,9 +24,9 @@ export const TradeResult = (props) => {
     <div className="absolute">
       <h1 className="message">{message()}</h1>
       <div>{renderImage()}</div>
-      <button className="button reset-trade"
-              onClick={() => console.log('firedddd')}>
-              Restart
+      <button className="button"
+              onClick={props.onClick}>
+              Go Back
       </button>
     </div>
   )

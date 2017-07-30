@@ -8,6 +8,7 @@ export default class EvaluateButton extends Component {
         showTrade: false
     }
     this.handleShowTrade = this.handleShowTrade.bind(this)
+    this.exitTrade = this.exitTrade.bind(this)
   }
 
   handleShowTrade(input) {
@@ -30,6 +31,10 @@ export default class EvaluateButton extends Component {
     this.handleShowTrade(true)
   }
 
+  exitTrade() {
+    this.handleShowTrade(false)
+  }
+
   render() {
     if (this.props.teamOne.length >= 1 && this.props.teamTwo.length >= 1) {
       return (
@@ -38,7 +43,7 @@ export default class EvaluateButton extends Component {
           <button className="button reset-trade" onClick={() => this.props.onClick()}>
             Reset Trade
           </button>
-          { this.state.showTrade ? <TradeResult teamOnePoints={this.teamOnePoints()} teamTwoPoints={this.teamTwoPoints()} /> : null }
+          { this.state.showTrade ? <TradeResult teamOnePoints={this.teamOnePoints()} teamTwoPoints={this.teamTwoPoints()} onClick={this.exitTrade} /> : null }
         </div>
       )
     } else {
