@@ -101,3 +101,15 @@ table {
 .reset-trade:hover {
   background-color: orange;
 }
+
+.absolute {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: grey;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
