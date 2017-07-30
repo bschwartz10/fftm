@@ -4,8 +4,8 @@ import Player from './Player.jsx'
 export default class Team extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-    }
+      this.state = {
+      }
   }
 
   players() {

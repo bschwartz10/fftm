@@ -101,3 +101,45 @@ table {
 .reset-trade:hover {
   background-color: orange;
 }
+
+.absolute {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background: grey;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: fadein 2s;
+   -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+     -o-animation: fadein 2s;
+        animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .8; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .8; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .8; }
+}
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .8; }
+}
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: .8; }
+}
+
+.message {
+  color: white;
+}
