@@ -22,12 +22,18 @@ export const TradeResult = (props) => {
   console.log(props)
   return (
     <div className="absolute">
-      <h1 className="message">{message()}</h1>
-      <div>{renderImage()}</div>
-      <button className="button"
+      <div>
+        <h1 className="message">{message()}</h1>
+      </div>
+      <div>
+        {renderImage()}
+      </div>
+      <div>
+        <button className="button"
               onClick={props.onClick}>
               Go Back
-      </button>
+        </button>
+      </div>
     </div>
   )
 }
