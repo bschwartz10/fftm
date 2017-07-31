@@ -18,11 +18,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/api/v1/teams/teams/1')
+    axios.get('https://the-intimidation-game.herokuapp.com/api/v1/teams/teams/1')
     .then(response => {
       this.setState({data1: response.data})
     })
-    axios.get('http://localhost:3000/api/v1/teams/teams/2')
+    axios.get('https://the-intimidation-game.herokuapp.com/api/v1/teams/teams/2')
     .then(response => {
       this.setState({data2: response.data})
     })
