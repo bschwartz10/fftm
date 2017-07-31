@@ -7,9 +7,11 @@ export default class Player extends Component {
     const nflTeam = this.props.info.nfl_team
     const fantasyPoints = this.props.info.stats[0].fantasy_points
     const teamId = this.props.info.team_id
+    const image = this.props.info.img_src
 
     return (
       <tr>
+       <td><img className="playerImage" src={image} /></td>
        <td>{name}</td>
        <td>{position}</td>
        <td>{nflTeam}</td>
