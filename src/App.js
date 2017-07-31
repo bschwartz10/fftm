@@ -64,7 +64,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="navbar">
-          <h1 className="title">Working Title</h1>
+          <img className="fantasyLogo" src='https://support.espn.com/resource/ESPN_Common/images/badges/Fantasy-Football-badge.png?1' />
         </div>
         <div className="teamOne">
           <Team data={this.state.data1} onClick={this.handleClickAdd}/>

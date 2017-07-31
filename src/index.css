@@ -9,7 +9,6 @@ body {
   display: grid;
   grid-template-columns: 40% 20% 40%;
   grid-template-rows: 55px 50% 1fr;
-  grid-row-gap: 12px;
 }
 
 .title {
@@ -180,6 +179,10 @@ table {
 }
 
 .playerImage {
-  width: 38%;
+  width: 40%;
   height: auto;
+}
+
+.fantasyLogo {
+  zoom: 10%;
 }
