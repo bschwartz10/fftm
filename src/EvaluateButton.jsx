@@ -39,7 +39,7 @@ export default class EvaluateButton extends Component {
     if (this.props.teamOne.length >= 1 && this.props.teamTwo.length >= 1) {
       return (
         <div>
-          <button className="button" onClick={() => this.tradeResult()}>Evaluate Trade</button>
+          <button className="button buttonLarge" onClick={() => this.tradeResult()}>Evaluate Trade</button>
           <button className="button reset-trade" onClick={() => this.props.onClick()}>
             Reset Trade
           </button>

@@ -7,7 +7,7 @@ export const TradeResult = (props) => {
     if (points > 0) {
       return <img className="thumbsUp"src ="http://clipartix.com/wp-content/uploads/2016/04/Thumbs-up-clipart-2.png"></img>
     }else {
-      return <img src ="http://clipartix.com/wp-content/uploads/2017/06/Hand-stop-sign-clipart-2.png"></img>
+      return <img className="thumbsDown" src ="https://3.bp.blogspot.com/-rPMwaBzdMH4/WIoM-p-JuQI/AAAAAAAAJdY/Qx7pdjbgxH4Hlf9_l9rsfuDU4yi9Im_xACLcB/w800-h800/08_thumbs_down-3-512.png"></img>
     }
   }
 
@@ -30,7 +30,7 @@ export const TradeResult = (props) => {
           <h1 className="message">{message()}</h1>
         </div>
         <div>
-          <button className="button"
+          <button className="button buttonLarge"
                 onClick={props.onClick}>
                 Go Back
           </button>

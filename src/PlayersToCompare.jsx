@@ -12,7 +12,7 @@ export default class PlayersToCompare extends Component {
 
   render() {
     return (
-          <table>
+          <table className="proposedPlayersTable">
             <tbody>
           {this.tradePlayers()}
             </tbody>
