@@ -23,8 +23,8 @@ export default class Team extends Component {
             <th></th>
             <th>Name</th>
             <th>Position</th>
-            <th>NFL Team</th>
-            <th>Fantasy Points</th>
+            <th>Team</th>
+            <th>Points</th>
             <th></th>
           </tr>
         </thead>
