@@ -11,10 +11,10 @@ export default class Player extends Component {
 
     return (
       <tr>
-       <td><img className="playerImage" src={playerImage} /></td>
+       <td><img className="playerImage" src={playerImage} alt="playerImage" /></td>
        <td>{name}</td>
        <td>{position}</td>
-       <td><img className="teamLogo" src={nflTeam} /></td>
+       <td><img className="teamLogo" src={nflTeam} alt="playerImage" /></td>
        <td>{fantasyPoints}</td>
        <td>
        <button
