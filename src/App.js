@@ -63,22 +63,26 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="navbar">
+          <h1 className="title">Working Title</h1>
+        </div>
         <div className="teamOne">
           <Team data={this.state.data1} onClick={this.handleClickAdd}/>
+        </div>
+        <div className="evalulatePlayers">
+          <EvaluateButton onClick={this.handleClickReset} teamOne={this.state.teamOnePlayers} teamTwo={this.state.teamTwoPlayers} />
         </div>
         <div className="teamTwo">
           <Team data={this.state.data2} onClick={this.handleClickAdd}/>
         </div>
-        <div>
+        <div className="proposedPlayersTeamOne">
           <h2>Proposed Players</h2>
-          <div className="proposedPlayersTeamOne">
-            <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamOnePlayers} />
-          </div>
-          <div className="proposedPlayersTeamTwo">
-            <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamTwoPlayers} />
-          </div>
+          <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamOnePlayers} />
         </div>
-        <EvaluateButton onClick={this.handleClickReset} teamOne={this.state.teamOnePlayers} teamTwo={this.state.teamTwoPlayers} />
+        <div className="proposedPlayersTeamTwo">
+          <h2>Proposed Players</h2>
+          <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamTwoPlayers} />
+        </div>
       </div>
     );
   }

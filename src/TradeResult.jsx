@@ -5,7 +5,7 @@ export const TradeResult = (props) => {
 
   const renderImage = () => {
     if (points > 0) {
-      return <img src ="http://www.clker.com/cliparts/2/k/n/l/C/Q/transparent-green-checkmark-md.png"></img>
+      return <img className="thumbsUp"src ="http://clipartix.com/wp-content/uploads/2016/04/Thumbs-up-clipart-2.png"></img>
     }else {
       return <img src ="http://clipartix.com/wp-content/uploads/2017/06/Hand-stop-sign-clipart-2.png"></img>
     }
@@ -22,17 +22,19 @@ export const TradeResult = (props) => {
   console.log(props)
   return (
     <div className="absolute">
-      <div>
-        <h1 className="message">{message()}</h1>
-      </div>
-      <div>
-        {renderImage()}
-      </div>
-      <div>
-        <button className="button"
-              onClick={props.onClick}>
-              Go Back
-        </button>
+      <div className="children">
+        <div>
+          {renderImage()}
+        </div>
+        <div>
+          <h1 className="message">{message()}</h1>
+        </div>
+        <div>
+          <button className="button"
+                onClick={props.onClick}>
+                Go Back
+          </button>
+        </div>
       </div>
     </div>
   )
