@@ -76,11 +76,11 @@ class App extends Component {
           <Team data={this.state.data2} onClick={this.handleClickAdd}/>
         </div>
         <div className="proposedPlayersTeamOne">
-          <h2>Proposed Players</h2>
+          <h2>Players To Trade</h2>
           <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamOnePlayers} />
         </div>
         <div className="proposedPlayersTeamTwo">
-          <h2>Proposed Players</h2>
+          <h2>Players To Receive</h2>
           <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamTwoPlayers} />
         </div>
       </div>
