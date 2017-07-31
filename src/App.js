@@ -67,13 +67,13 @@ class App extends Component {
           <img className="fantasyLogo" src='https://support.espn.com/resource/ESPN_Common/images/badges/Fantasy-Football-badge.png?1' alt="fantasyLogo" />
         </div>
         <div className="teamOne">
-          <Team data={this.state.data1} onClick={this.handleClickAdd}/>
+          <Team data={this.state.data1} name={"User Team"} onClick={this.handleClickAdd}/>
         </div>
         <div className="evalulatePlayers">
           <EvaluateButton onClick={this.handleClickReset} teamOne={this.state.teamOnePlayers} teamTwo={this.state.teamTwoPlayers} />
         </div>
         <div className="teamTwo">
-          <Team data={this.state.data2} onClick={this.handleClickAdd}/>
+          <Team data={this.state.data2} name={"Computer Team"} onClick={this.handleClickAdd}/>
         </div>
         <div className="proposedPlayersTeamOne">
           <h2>Players To Trade</h2>
