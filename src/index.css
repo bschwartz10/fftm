@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: bookman;
-  background-color: #fcfcfc;
+  background-color: #F8F8F2;
+  color: #292929
 }
 
 .App {
@@ -129,7 +130,7 @@ table {
   height:100%;
   width:100%;
   background: grey;
-  opacity: 0.8;
+  opacity: 0.9;
   -webkit-animation: fadein 2s;
    -moz-animation: fadein 2s;
     -ms-animation: fadein 2s;
@@ -140,23 +141,23 @@ table {
 
 @keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: .8; }
+    to   { opacity: .9; }
 }
 @-moz-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: .8; }
+    to   { opacity: .9; }
 }
 @-webkit-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: .8; }
+    to   { opacity: .9; }
 }
 @-ms-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: .8; }
+    to   { opacity: .9; }
 }
 @-o-keyframes fadein {
     from { opacity: 0; }
-    to   { opacity: .8; }
+    to   { opacity: .9; }
 }
 
 .message {
