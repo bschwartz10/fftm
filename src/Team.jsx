@@ -20,7 +20,7 @@ export default class Team extends Component {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th className="teamName">{this.props.name}</th>
             <th>Name</th>
             <th>Position</th>
             <th>Team</th>
