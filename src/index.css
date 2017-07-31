@@ -183,6 +183,16 @@ table {
   height: auto;
 }
 
+.teamLogo {
+  width: 100%;
+  height: auto;
+}
+
+.teamLogoSmall {
+  width: 65%;
+  height: auto;
+}
+
 .fantasyLogo {
   zoom: 10%;
 }

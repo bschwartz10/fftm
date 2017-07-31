@@ -18,11 +18,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/api/v1/teams/teams/1')
+    axios.get('https://the-intimidation-game.herokuapp.com/api/v1/teams/teams/1')
     .then(response => {
       this.setState({data1: response.data})
     })
-    axios.get('http://localhost:3000/api/v1/teams/teams/2')
+    axios.get('https://the-intimidation-game.herokuapp.com/api/v1/teams/teams/2')
     .then(response => {
       this.setState({data2: response.data})
     })
@@ -64,7 +64,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="navbar">
-          <img className="fantasyLogo" src='https://support.espn.com/resource/ESPN_Common/images/badges/Fantasy-Football-badge.png?1' />
+          <img className="fantasyLogo" src='https://support.espn.com/resource/ESPN_Common/images/badges/Fantasy-Football-badge.png?1' alt="fantasyLogo" />
         </div>
         <div className="teamOne">
           <Team data={this.state.data1} onClick={this.handleClickAdd}/>

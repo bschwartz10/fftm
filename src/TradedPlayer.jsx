@@ -10,10 +10,10 @@ export default class TradedPlayer extends Component {
 
     return (
       <tr className="tradedPlayer">
-       <td>{name}</td>
-       <td>{position}</td>
-       <td>{nflTeam}</td>
-       <td>{fantasyPoints} points</td>
+        <td>{name}</td>
+        <td>{position}</td>
+        <td><img className="teamLogoSmall" src={nflTeam} alt="teamLogoSmall" /></td>
+        <td>{fantasyPoints} points</td>
        <td>
          <button
            className="button remove-player"
