@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 export default class TradedPlayer extends Component {
   render() {
+    let playerImage = this.props.info.playerImage
     let name = this.props.info.name
     let position = this.props.info.position
     let nflTeam = this.props.info.nflTeam
@@ -10,10 +11,10 @@ export default class TradedPlayer extends Component {
 
     return (
       <tr className="tradedPlayer">
-       <td>{name}</td>
-       <td>{position}</td>
-       <td>{nflTeam}</td>
-       <td>{fantasyPoints} points</td>
+        <td>{name}</td>
+        <td>{position}</td>
+        <td><img className="teamLogoSmall" src={nflTeam} /></td>
+        <td>{fantasyPoints} points</td>
        <td>
          <button
            className="button remove-player"
