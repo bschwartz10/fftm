@@ -12,7 +12,7 @@ You can find a live version of this application on Heroku at: https://fftm.herok
 
 * This app is built with React and is consuming Rails API for its data.
 
-* The API can be found on [GitHub](https://github.com/bschwartz10/the_intimidation_game) and or live at https://the-intimidation-game.herokuapp.com/api/v1/teams/teams/1
+* The API can be found on [GitHub](https://github.com/bschwartz10/the_intimidation_game) and or live at https://the-intimidation-game.herokuapp.com
 
 ### Setup
 
