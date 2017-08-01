@@ -282,7 +282,7 @@ table {
     }
 
     .tradedPlayer td {
-      font-size: 10px;
+      font-size: 12px;
     }
 
     .absolute {
@@ -296,4 +296,7 @@ table {
       grid-row: 2;
     }
 
+    .playerPoints {
+      display: none;
+    }
 }

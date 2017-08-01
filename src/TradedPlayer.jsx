@@ -13,7 +13,7 @@ export default class TradedPlayer extends Component {
         <td>{name}</td>
         <td className="playerPosition">{position}</td>
         <td className="playerLogo"><img className="teamLogoSmall" src={nflTeam} alt="teamLogoSmall" /></td>
-        <td>{fantasyPoints} points</td>
+        <td className="playerPoints">{fantasyPoints} points</td>
        <td>
          <button
            className="button remove-player"
