@@ -240,6 +240,7 @@ table {
       grid-column: 1 / span 3;
       grid-row: 6;
       margin-bottom: 35px;
+      margin-top: 20px;
     }
 
     .reset-trade {
@@ -267,6 +268,16 @@ table {
     .button {
         padding: 4px 7px;
         font-size: 14px
+    }
+
+    .disabled {
+      padding: 8px 7px;
+      font-size: 14px
+    }
+
+    .buttonLarge {
+      padding: 8px 7px;
+      font-size: 14px
     }
 
     .remove-player {
