@@ -239,6 +239,7 @@ table {
     .evalulatePlayers {
       grid-column: 1 / span 3;
       grid-row: 6;
+      margin-bottom: 35px;
     }
 
     .reset-trade {
