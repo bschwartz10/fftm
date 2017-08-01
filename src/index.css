@@ -300,4 +300,8 @@ table {
     .playerPoints {
       display: none;
     }
+
+    .mobileButton {
+      font-size: 32px;
+    }
 }

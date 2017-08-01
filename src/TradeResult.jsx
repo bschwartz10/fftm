@@ -29,7 +29,7 @@ export const TradeResult = (props) => {
           <h1 className="message">{message()}</h1>
         </div>
         <div>
-          <button className="button buttonLarge"
+          <button className="button buttonLarge mobileButton"
                 onClick={props.onClick}>
                 Go Back
           </button>
