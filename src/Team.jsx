@@ -20,11 +20,11 @@ export default class Team extends Component {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th className="teamName">{this.props.name}</th>
             <th>Name</th>
             <th>Position</th>
-            <th>NFL Team</th>
-            <th>Fantasy Points</th>
+            <th>Team</th>
+            <th>Points</th>
             <th></th>
           </tr>
         </thead>
