@@ -11,8 +11,8 @@ export default class TradedPlayer extends Component {
     return (
       <tr className="tradedPlayer">
         <td>{name}</td>
-        <td>{position}</td>
-        <td><img className="teamLogoSmall" src={nflTeam} alt="teamLogoSmall" /></td>
+        <td className="playerPosition">{position}</td>
+        <td className="playerLogo"><img className="teamLogoSmall" src={nflTeam} alt="teamLogoSmall" /></td>
         <td>{fantasyPoints} points</td>
        <td>
          <button

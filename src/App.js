@@ -73,7 +73,7 @@ class App extends Component {
           <EvaluateButton onClick={this.handleClickReset} teamOne={this.state.teamOnePlayers} teamTwo={this.state.teamTwoPlayers} />
         </div>
         <div className="teamTwo">
-          <Team data={this.state.data2} name={"Computer Team"} onClick={this.handleClickAdd}/>
+          <Team data={this.state.data2} name={"Comp Team"} onClick={this.handleClickAdd}/>
         </div>
         <div className="proposedPlayersTeamOne">
           <h2>Players To Trade</h2>
