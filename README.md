@@ -25,7 +25,9 @@ To set up a local copy of this project, perform the following:
   5. Visit `http://localhost:3000/`
 
 ### Design
-The app is designed using HTML5 and CSS Grid Layout
+The app is designed using HTML5 and CSS Grid Layout. Media queries were included in the design to make the app fully mobile responsive.
+
+![Alt text](./src/mobile.png)
 
 ### Dependencies
 
