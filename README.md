@@ -1,11 +1,11 @@
-# FFTM
+# Who Gon Swap Me
 
 ![Alt text](./src/home.png)
 ### Simulate fantasy football trades by evaluating your players against the computer team's players
 
 ### Live Version
 
-You can find a live version of this application on Heroku at: https://fftm.herokuapp.com/
+You can find a live version of this application on Heroku at: https://whogonswapme.herokuapp.com/
 
 ## Overview
 
@@ -18,7 +18,7 @@ You can find a live version of this application on Heroku at: https://fftm.herok
 
 To set up a local copy of this project, perform the following:
 
-  1. Clone the repository: `git clone https://github.com/bschwartz10/fftm`
+  1. Clone the repository: `git clone https://github.com/bschwartz10/who_gon_swap_me`
   2. `cd` into the project's directory
   3. Run `npm install`
   4. Run `npm start`
