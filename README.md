@@ -1,4 +1,4 @@
-# FFTM
+# Who Gon Swap Me
 
 ![Alt text](./src/home.png)
 ### Simulate fantasy football trades by evaluating your players against the computer team's players
