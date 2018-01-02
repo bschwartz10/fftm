@@ -25,23 +25,30 @@ To set up a local copy of this project, perform the following:
   5. Visit `http://localhost:3000/`
 
 ### Dependencies
-  This application depends on npm packages, all of which are found in the `package.json` and can be installed by running `npm install` from the terminal in the main directory of the project.
+This application depends on npm packages, all of which are found in the `package.json` and can be installed by running `npm install` from the terminal in the main directory of the project.
 
 ### Design
-  The app is split into seven separate components:
-  * App - Top level component
-   1. Responsible for external API call to collect team/player information
-   2. Handles adding and removing players from a trade
-  * Team - Represents one team
-   1. Renders HTML table with stat categories
-   2. Creates a Player component which a JSON object
-  * Player - Represents one player
-   1. Fills each row of the Team table with a player
-  * PlayersToCompare - Creates a TradedPlayer component for each player that is active in current trade
-  * TradedPlayer - Represents players active in current trade
-  * TradeResult - Trade result screen
-   1. Renders a positive or negative outcome dependent on the trade result
-  * EvaluateButton - Computes trade outcome based on player statistics
+The app is split into seven separate components:
+
+App - Top level component
+- Responsible for external API call to collect team/player information
+- Handles adding and removing players from a trade
+
+Team - Represents one team
+- Renders HTML table with stat categories
+- Creates a Player component which a JSON object
+
+Player - Represents one player
+- Fills each row of the Team table with a player
+
+PlayersToCompare - Creates a TradedPlayer component for each player that is active in current trade
+
+TradedPlayer - Represents players active in current trade
+
+TradeResult - Trade result screen
+- Renders a positive or negative outcome dependent on the trade result
+
+EvaluateButton - Computes trade outcome based on player statistics
 
 ### Discussion
 The goal of this application is to create a SPA for fantasy football trades. The UI for fantasy football trades on the popular platforms right now requires multiple screen refreshes and page loads. This app was built as a minimum viable product to simulate how the current UI could be streamlined.
