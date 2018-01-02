@@ -30,12 +30,13 @@ class App extends Component {
 
   handleClickAdd(player) {
     if (player.teamId === 1) {
-    const filter1 = (this.state.teamOnePlayers.findIndex(i => i.name === player.name))
-      if (filter1 === -1) {
-      this.setState({teamOnePlayers: this.state.teamOnePlayers.concat(player)})
-      }
-    } else {
-        const filter2 = (this.state.teamTwoPlayers.findIndex(i => i.name === player.name))
+      const filter1 = (this.state.teamOnePlayers.findIndex(i => i.name === player.name))
+        if (filter1 === -1) {
+          this.setState({teamOnePlayers: this.state.teamOnePlayers.concat(player)})
+        }
+    }
+    else {
+      const filter2 = (this.state.teamTwoPlayers.findIndex(i => i.name === player.name))
         if (filter2 === -1) {
           this.setState({teamTwoPlayers: this.state.teamTwoPlayers.concat(player)})
         }
@@ -84,9 +85,8 @@ class App extends Component {
           <PlayersToCompare onClick={this.handleClickRemove} players={this.state.teamTwoPlayers} />
         </div>
       </div>
-    );
+    )
   }
 }
-
 
 export default App;

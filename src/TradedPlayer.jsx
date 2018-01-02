@@ -14,13 +14,13 @@ export default class TradedPlayer extends Component {
         <td className="playerPosition">{position}</td>
         <td className="playerLogo"><img className="teamLogoSmall" src={nflTeam} alt="teamLogoSmall" /></td>
         <td className="playerPoints">{fantasyPoints} points</td>
-       <td>
-         <button
-           className="button remove-player"
-           onClick={() => this.props.onClick({name: name, teamId: teamId})}>
-           Remove
-         </button>
-       </td>
+        <td>
+          <button
+            className="button remove-player"
+            onClick={() => this.props.onClick({name: name, teamId: teamId})}>
+            Remove
+          </button>
+        </td>
       </tr>
     )
   }

@@ -6,7 +6,8 @@ export const TradeResult = (props) => {
   const renderImage = () => {
     if (points > 0) {
       return <img className="thumbsDown" src="https://3.bp.blogspot.com/-rPMwaBzdMH4/WIoM-p-JuQI/AAAAAAAAJdY/Qx7pdjbgxH4Hlf9_l9rsfuDU4yi9Im_xACLcB/w800-h800/08_thumbs_down-3-512.png" alt="thumbsDown"></img>
-    }else {
+    }
+    else {
       return <img className="thumbsUp" src="http://clipartix.com/wp-content/uploads/2016/04/Thumbs-up-clipart-2.png" alt="thumbsUp" ></img>
     }
   }
@@ -14,7 +15,8 @@ export const TradeResult = (props) => {
   const message = () => {
     if (points > 0) {
       return `This trade would result in a decrease of ${points} points for your team`
-    }else {
+    }
+    else {
       return `This trade would result in an increase of ${Math.abs(points)} points for your team`
     }
   }
@@ -30,8 +32,8 @@ export const TradeResult = (props) => {
         </div>
         <div>
           <button className="button buttonLarge mobileButton"
-                onClick={props.onClick}>
-                Go Back
+            onClick={props.onClick}>
+            Go Back
           </button>
         </div>
       </div>

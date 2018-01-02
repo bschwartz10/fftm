@@ -46,7 +46,8 @@ export default class EvaluateButton extends Component {
           { this.state.showTrade ? <TradeResult teamOnePoints={this.teamOnePoints()} teamTwoPoints={this.teamTwoPoints()} onClick={this.exitTrade} /> : null }
         </div>
       )
-    } else {
+    }
+    else {
         return (
           <div>
             <button className="button disabled">Evaluate Trade</button>
