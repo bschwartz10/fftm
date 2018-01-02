@@ -36,7 +36,7 @@ App - Top level component
 
 Team - Represents one team
 - Renders HTML table with stat categories
-- Creates a Player component which a JSON object
+- Creates a Player component from a JSON object
 
 Player - Represents one player
 - Fills each row of the Team table with a player
@@ -55,7 +55,7 @@ The goal of this application is to create a SPA for fantasy football trades. The
 
 The components were built to maximize reusability. Both teams use the same Team and Player components to create their markup. The TradedPlayer component functions for both teams as well and determines which team the player is on based on a teamId prop.
 
-The app is consuming a Rails API for its team/player data. Right now the App component is making two API calls within the componentDidMount method to retrieve the data for each team. The API can probably be better restructured so the the App component is only required to make one API call which would increase performance.
+The app is consuming a Rails API for its team/player data. Right now the App component is making two API calls within the componentDidMount function to retrieve the data for each team. The API can probably be better restructured so the the App component is only required to make one API call which would increase performance.
 
 The app currently doesn't have any tests. I was given a short time period to build this application and it was my first time building an app in React. Due to those circumstances, I decided to hold off testing until a later point. I don't prefer this workflow and moving forward I plan on TDD'ing my React apps.
 
