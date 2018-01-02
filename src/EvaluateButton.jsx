@@ -48,12 +48,12 @@ export default class EvaluateButton extends Component {
       )
     }
     else {
-        return (
-          <div>
-            <button className="button disabled">Evaluate Trade</button>
-            <button className="button disabled reset-trade">Reset Trade</button>
-          </div>
-        )
+      return (
+        <div>
+          <button className="button disabled">Evaluate Trade</button>
+          <button className="button disabled reset-trade">Reset Trade</button>
+        </div>
+      )
     }
   }
 }
